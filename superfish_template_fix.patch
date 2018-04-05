@@ -1,6 +1,6 @@
---- superfish.html.twig.mzu	2018-04-05 17:01:07.808219475 +0200
-+++ superfish.html.twig	2018-04-05 17:00:02.636573094 +0200
-@@ -0,0 +1,19 @@
+--- web/modules/contrib/superfish/templates/superfish.html.twig	(date 1522937746000)
++++ web/modules/contrib/superfish/templates/superfish.html.twig	(date 1522937746000)
+@@ -0,0 +1,31 @@
 +{#
 +/**
 + * @file
@@ -16,7 +16,19 @@
 + * @ingroup themeable
 + */
 +#}
++<nav id="menu-main-navigation" class="region-full-content">
++  <button id="menu-open-btn" class="icon icon-menu" type="button"><span class="label-menu">Menü</span></button>
 +
-+<ul id="{{ id }}" class="{{ menu_classes }}">
-+  {{ menu_items }}
-+</ul>
++  <div class="container-content region-fixed-content">
++    <div class="logo" data-internal-url="/">
++      <img src="/sites/default/files/logodzw_0.png" alt="Startseite">
++    </div>
++    <ul id="{{ id }}" class="{{ menu_classes }}">
++      {{ menu_items }}
++    </ul>
++
++  </div>
++
++  <button id="search-open-btn" class="icon icon-search" type="button"></button>
++  <!-- mzu mizu search-open-btn should be in toolbar -->
++</nav>
